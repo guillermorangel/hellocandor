@@ -1,0 +1,23 @@
+<div class="portfolioHeader">
+    <div class="row">
+
+        <% link_to '../../index.html' do %>
+            <%= image_tag 'logo_dark.png', :class => 'logoDark' %>
+        <% end %>
+    </div>
+</div>
+
+<section class="portfolioPost">
+    <div class="row">
+        <%= data.portfolio.items[post].title %>
+
+        <% 1.upto(data.portfolio.items[post].imagesCount) do |i| %>
+
+            <%= image_tag data.portfolio.items[post].imagesFolderPath+data.portfolio.items[post].imagesHandle+"#{i}"+'.jpg', :class => 'portofolioThumbnail' %>
+
+        <% end %>
+    </div>
+</section>
+
+<%= partial "portfoliogallery" %>
+<%= partial "aboutcontact" %>

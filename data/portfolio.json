@@ -1,0 +1,151 @@
+{
+    "gallery": [
+        "annetomas",
+        "cooper",
+        "barbra",
+        "marianabaltazar",
+        "mckenzie",
+        "kearstenjustin",
+        "katrina",
+        "idil",
+        "joy",
+        "johnsonfamily",
+        "kevin",
+        "lauren",
+        "thetas",
+        "emily",
+        "cassidy",
+        "connor"
+    ],
+
+    "items": {
+        "annetomas": {
+            "title": "anne + tomas",
+            "url": "portfolio/annetomas",
+            "imagesFolderPath": "portfolio/annetomas/",
+            "imagesHandle": "annetomas",
+            "imagesCount": 4,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "cooper": {
+            "title": "cooper",
+            "url": "portfolio/cooper",
+            "imagesFolderPath": "portfolio/cooper/",
+            "imagesHandle": "cooper",
+            "imagesCount": 9,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "barbra": {
+            "title": "barbra",
+            "url": "portfolio/barbra",
+            "imagesFolderPath": "portfolio/barbra/",
+            "imagesHandle": "barbra",
+            "imagesCount": 11,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "marianabaltazar": {
+            "title": "mariana + baltazar",
+            "url": "portfolio/marianabaltazar",
+            "imagesFolderPath": "portfolio/marianabaltazar/",
+            "imagesHandle": "marianabaltazar",
+            "imagesCount": 18,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "mckenzie": {
+            "title": "mckenzie",
+            "url": "portfolio/mckenzie",
+            "imagesFolderPath": "portfolio/mckenzie/",
+            "imagesHandle": "mckenzie",
+            "imagesCount": 14,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "kearstenjustin": {
+            "title": "kearsten + justin",
+            "url": "portfolio/kearstenjustin",
+            "imagesFolderPath": "portfolio/kearstenjustin/",
+            "imagesHandle": "kearstenjustin",
+            "imagesCount": 5,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "katrina": {
+            "title": "katrina",
+            "url": "portfolio/katrina",
+            "imagesFolderPath": "portfolio/katrina/",
+            "imagesHandle": "katrina",
+            "imagesCount": 1,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "idil": {
+            "title": "idil",
+            "url": "portfolio/idil",
+            "imagesFolderPath": "portfolio/idil/",
+            "imagesHandle": "idil",
+            "imagesCount": 3,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "joy": {
+            "title": "joy",
+            "url": "portfolio/joy",
+            "imagesFolderPath": "portfolio/joy/",
+            "imagesHandle": "joy",
+            "imagesCount": 3,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "johnsonfamily": {
+            "title": "johnson family",
+            "url": "portfolio/johnsonfamily",
+            "imagesFolderPath": "portfolio/johnsonfamily/",
+            "imagesHandle": "johnsonfamily",
+            "imagesCount": 3,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "kevin": {
+            "title": "kevin",
+            "url": "portfolio/kevin",
+            "imagesFolderPath": "portfolio/kevin/",
+            "imagesHandle": "kevin",
+            "imagesCount": 3,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "lauren": {
+            "title": "lauren",
+            "url": "portfolio/lauren",
+            "imagesFolderPath": "portfolio/lauren/",
+            "imagesHandle": "lauren",
+            "imagesCount": 5,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "thetas": {
+            "title": "thetas",
+            "url": "portfolio/thetas",
+            "imagesFolderPath": "portfolio/thetas/",
+            "imagesHandle": "thetas",
+            "imagesCount": 6,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "emily": {
+            "title": "emily",
+            "url": "portfolio/emily",
+            "imagesFolderPath": "portfolio/emily/",
+            "imagesHandle": "emily",
+            "imagesCount": 1,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "cassidy": {
+            "title": "cassidy",
+            "url": "portfolio/cassidy",
+            "imagesFolderPath": "portfolio/cassidy/",
+            "imagesHandle": "cassidy",
+            "imagesCount": 1,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        },
+        "connor": {
+            "title": "connor",
+            "url": "portfolio/connor",
+            "imagesFolderPath": "portfolio/connor/",
+            "imagesHandle": "connor",
+            "imagesCount": 1,
+            "summary": "Aliquam accumsan porttitor purus. Nunc fringilla suscipit magna in accumsan. Phasellus efficitur ligula non maximus dapibus. Integer dui ipsum, efficitur sed rutrum sed, porttitor et risus. Duis semper venenatis risus at condimentum. In ultricies mauris nec arcu consequat egestas. Ut ac rutrum leo. Suspendisse eu tristique leo. Donec ac arcu vitae ex porta ultricies."
+        }
+    }
+}
