@@ -4,7 +4,7 @@
             <%= image_tag 'logo_dark.png', :class => 'logoDark' %>
         <% end %>
 
-        <p>
+        <p id="navigation">
             <% if current_page.url != '/' %>
                 <%= link_to 'home', '/' %>&nbsp;&nbsp;
             <% end %>
@@ -17,7 +17,7 @@
                 %>&nbsp;&nbsp;
 
                 <%=
-                    link_to 'about',
+                    link_to 'about &amp; contact',
                     '/about',
                     :class => nav_active('/about/')
                 %>&nbsp;&nbsp;
