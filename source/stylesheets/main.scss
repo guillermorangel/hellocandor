@@ -108,7 +108,6 @@ p img {
 	margin: 0;
 }
 em, i, strong, b {
-	font-size: 1.6rem;
 	line-height: 3rem;
 	font-style: normal;
 	font-weight: normal;
@@ -403,7 +402,6 @@ select {
 	outline: none;
 	vertical-align: middle;
 	color: #333333;
-	font-size: 1.7rem;
 	line-height: 3rem;
 	max-width: 100%;
 	background: transparent;
@@ -429,9 +427,8 @@ select:focus {
 	border-color: lightseagreen;
 }
 label, legend {
-	font-size: 1.6rem;
+    font-size: 1rem;
 	margin-bottom: .6rem;
-	color: black;
 	display: block;
 }
 input[type="checkbox"],
@@ -1025,9 +1022,6 @@ header .row {
 	.main-content-tablecell h1 {
 		font-size: 3.5rem;
 	}
-	.main-content-tablecell p {
-		font-size: 1.7rem;
-	}
 }
 @media only screen and (max-width:768px) {
 	.main-content-tablecell .row {
@@ -1035,9 +1029,6 @@ header .row {
 	}
 	.main-content-tablecell h1 {
 		font-size: 3.2rem;
-	}
-	.main-content-tablecell p {
-		font-size: 1.6rem;
 	}
 	.scroll-icon {
 		right: 45px;
@@ -1148,8 +1139,16 @@ header .row {
 	opacity: .7;
 }
 
-.about #info {
-    min-height: 100vh;
+.about {
+
+    #info {
+        min-height: 100vh;
+        padding-top: 8rem;
+
+        .tabs-wrap .tab-entry-intro {
+            max-width: 1200px;
+        }
+    }
 }
 
 /* tabs
@@ -1341,11 +1340,6 @@ header .row {
 .about-list .icon i {
 	font-size: 5.4rem;
 }
-.about-list .h05 {
-	font-size: 1.7rem;
-	line-height: 1.765;
-	margin-bottom: 1.8rem;
-}
 
 /* -------------------------------------------------------------------
  * responsive:
@@ -1515,17 +1509,6 @@ header .row {
 		-ms-transform: scale(1);
 		transform: scale(1);
 	}
-}
-
-/* -------------------------------------------------------------------
- * tab subscribe - (_layout.css)
- * ------------------------------------------------------------------- */
-#tab-subscribe .form-field input {
-	text-align: center;
-}
-#tab-subscribe label {
-	color: #000000;
-	font-size: 1.7rem;
 }
 
 

@@ -1,8 +1,15 @@
 <%= partial "pageheader" %>
 
 <section id="info">
-    <div class="row">
-        <%= partial "aboutcontent" %>
+    <div class="row" style="text-align: center">
+        <div class="col-six">
+            <p>about</p>
+            <%= partial "aboutcontent" %>
+        </div>
+        <div class="col-six">
+            <p>i'd love to meet you. let's talk.</p>
+            <%= partial "contactform" %>
+        </div>
     </div>
     <%= partial "footer" %>
 </section>
