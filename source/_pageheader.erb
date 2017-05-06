@@ -1,0 +1,14 @@
+<div id="pageHeader" class="pageHeader">
+    <div class="row">
+
+        <% link_to '/' do %>
+            <%= image_tag 'logo_dark.png', :class => 'logoDark' %>
+        <% end %>
+
+        <p>
+            <%= link_to 'home', '/' %> |
+            <%= link_to 'portfolio', '#portfolio', :class => 'smoothscroll' %> |
+            <%= link_to 'about &amp; contact', '#info', :class => 'smoothscroll' %>
+        </p>
+    </div>
+</div>
