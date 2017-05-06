@@ -1,14 +1,35 @@
 <div id="pageHeader" class="pageHeader">
     <div class="row">
-
         <% link_to '/' do %>
             <%= image_tag 'logo_dark.png', :class => 'logoDark' %>
         <% end %>
 
         <p>
-            <%= link_to 'home', '/' %> |
-            <%= link_to 'portfolio', '#portfolio', :class => 'smoothscroll' %> |
-            <%= link_to 'about &amp; contact', '#info', :class => 'smoothscroll' %>
+            <% if current_page.url != '/' %>
+                <%= link_to 'home', '/' %>&nbsp;&nbsp;
+            <% end %>
+
+            <% if current_page.url != '/' %>
+                <%=
+                    link_to 'portfolio',
+                    '/portfolio',
+                    :class => nav_active('/portfolio/')
+                %>&nbsp;&nbsp;
+
+                <%=
+                    link_to 'about',
+                    '/about',
+                    :class => nav_active('/about/')
+                %>&nbsp;&nbsp;
+                <%=
+                    link_to 'contact',
+                    '/contact',
+                    :class => nav_active('/contact/')
+                %>
+            <% else %>
+                <%= link_to 'portfolio', '#portfolio', :class => 'smoothscroll' %>&nbsp;|
+                <%= link_to 'about &amp; contact', '#info', :class => 'smoothscroll' %>
+            <% end %>
         </p>
     </div>
 </div>

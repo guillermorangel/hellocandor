@@ -52,3 +52,9 @@ configure :build do
 
   activate :asset_host, :host => '//hellocandor.com/'
 end
+
+helpers do
+  def nav_active(url)
+    current_page.url == url ? "active" : ""
+  end
+end
