@@ -39,21 +39,6 @@
 html {
 	font-size: 10px;
 }
-@media only screen and (max-width:1024px) {
-	html {
-		font-size: 9.375px;
-	}
-}
-@media only screen and (max-width:768px) {
-	html {
-		font-size: 10px;
-	}
-}
-@media only screen and (max-width:400px) {
-	html {
-		font-size: 9.375px;
-	}
-}
 html, body {
 	height: 100%;
     font-family: 'Roboto Mono', monospace;
@@ -88,6 +73,7 @@ a:hover, a:focus, a.active {
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
     font-size: 1.4rem;
 	font-style: normal;
+    font-weight: 500;
 	margin-bottom: 2.1rem;
 }
 h3, .h03, h4, .h04 {
@@ -138,12 +124,10 @@ blockquote:before {
 blockquote p {
 	font-style: italic;
 	padding: 0;
-	font-size: 1.9rem;
 	line-height: 1.75;
 }
 blockquote cite {
 	display: block;
-	font-size: 1.2rem;
 	font-style: normal;
 	line-height: 1.65;
 }
@@ -168,7 +152,6 @@ pre {
 	background: #F1F1F1;
 }
 code {
-	font-size: 1.4rem;
 	margin: 0 .2rem;
 	padding: .3rem .6rem;
 	white-space: nowrap;
@@ -326,7 +309,11 @@ img.pull-left {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #050505;
+    background-color: rgba(0,0,0,0.4);
+    background-image: url("../images/homeslider-bckgnd.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 	z-index: 800;
 	height: 100%;
 	width: 100%;
@@ -821,7 +808,6 @@ header .row {
 	min-height: 800px;
 	z-index: 600;
 	position: relative;
-    font-size: 1.5rem;
     color: #fff;
 }
 #home .row {
@@ -830,7 +816,7 @@ header .row {
 }
 
 #home.home-static {
-	background-image: url(../images/home-bg.jpg);
+	background-image: url("../images/home-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -905,7 +891,6 @@ header .row {
     padding-bottom: 0;
 }
 .main-content-tablecell h1 {
-	font-size: 4.2rem;
 	line-height: 1.143;
 	color: #FFFFFF;
 	margin-bottom: 1.2rem;
@@ -1018,17 +1003,9 @@ header .row {
  * responsive:
  * home section
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1024px) {
-	.main-content-tablecell h1 {
-		font-size: 3.5rem;
-	}
-}
 @media only screen and (max-width:768px) {
 	.main-content-tablecell .row {
 		padding-bottom: 12rem;
-	}
-	.main-content-tablecell h1 {
-		font-size: 3.2rem;
 	}
 	.scroll-icon {
 		right: 45px;
@@ -1041,9 +1018,6 @@ header .row {
 	#home {
 		min-height: 700px;
 	}
-	.main-content-tablecell h1 {
-		font-size: 2.7rem;
-	}
 }
 @media only screen and (max-width:500px) {
 
@@ -1051,9 +1025,6 @@ header .row {
 @media only screen and (max-width:400px) {
 	#home {
 		min-height: 600px;
-	}
-	.main-content-tablecell h1 {
-		font-size: 2.4rem;
 	}
 }
 
@@ -1068,7 +1039,7 @@ header .row {
 }
 
 
-#portfolio {
+#portfolioGallery {
     padding: 4rem 0 12rem;
     text-align: center;
 
@@ -1105,7 +1076,7 @@ header .row {
         position: relative;
     }
 
-    img {
+    .portfolioImage {
         max-height: 80vh;
         padding-bottom: 2rem;
     }
@@ -1118,7 +1089,7 @@ header .row {
  * ------------------------------------------------------------------- */
 #info {
 	background: #FFFFFF;
-	background-image: url(../images/info-bckgnd.jpg);
+	background-image: url("../images/info-bckgnd.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1188,7 +1159,7 @@ header .row {
 }
 #info .tabs-wrap ul.tabs li i {
 	margin-right: 7px;
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	position: relative;
 	top: .3rem;
 }
@@ -1210,7 +1181,6 @@ header .row {
 	margin-bottom: 4.2rem;
 }
 #info .tabs-wrap .tab-entry-intro h1 {
-	font-size: 4.5rem;
 	line-height: 1.267;
 }
 #info .tabs-wrap .tab-entry-intro p.lead {
@@ -1294,9 +1264,6 @@ header .row {
 		top: .3rem;
 		font-size: 2.7rem;
 	}
-	#info .tabs-wrap .tab-entry-intro h1 {
-		font-size: 4rem;
-	}
 }
 @media only screen and (max-width:600px) {
 	#info .tabs-wrap ul.tabs {
@@ -1305,9 +1272,6 @@ header .row {
 	#info .tabs-wrap ul.tabs li i {
 		font-size: 2.4rem;
 	}
-	#info .tabs-wrap .tab-entry-intro h1 {
-		font-size: 3.8rem;
-	}
 }
 @media only screen and (max-width:500px) {
 	#info .tabs-wrap ul.tabs li {
@@ -1315,10 +1279,7 @@ header .row {
 	}
 	#info .tabs-wrap ul.tabs li i {
 		font-size: 2.1rem;
-	}
-	#info .tabs-wrap .tab-entry-intro h1 {
-		font-size: 3.5rem;
-	}
+    }
 }
 
 /* -------------------------------------------------------------------
@@ -1575,9 +1536,7 @@ header .row {
 	.cta-wrap {
 		max-width: 650px;
 	}
-	.cta-wrap h2 {
-		font-size: 2.7rem;
-	}
+
 }
 
 

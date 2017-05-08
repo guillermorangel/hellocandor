@@ -9,26 +9,12 @@
             <% end %>
         </div>
 
-        <%
-            allImages = ''
-
-            1.upto(data.portfolio.items[post].imagesCount) do |i|
-
+        <% 1.upto(data.portfolio.items[post].imagesCount) do |i| %>
+            <%
                 imagePath = data.portfolio.items[post].imagesFolderPath+data.portfolio.items[post].imagesHandle+"#{i}"+'.jpg'
-
-                fullImagePath = 'http://hellocandor.com/images/'+imagePath
-
-                imgTag = '<img class="lazy" data-src="'+fullImagePath+'" class="lazy">'
-
-                allImages = allImages + imgTag
-
-            end
-        %>
-
-        <%=
-            allImages
-        %>
-
+            %>
+            <%= image_tag imagePath, :class => 'portfolioImage' %>
+        <% end %>
     </div>
 </section>
 
