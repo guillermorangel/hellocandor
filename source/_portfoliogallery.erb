@@ -5,7 +5,7 @@
             <% data.portfolio.gallery.each do |f| %>
                 <div class="bgrid item">
                     <% link_to data.portfolio.items[f].url, :class => 'thumbLink' do %>
-                        <%= image_tag data.portfolio.items[f].imagesFolderPath+data.portfolio.items[f].imagesHandle+'feature.jpg', :class => 'portofolioThumbnail' %>
+                        <%= image_tag data.portfolio.items[f].imagesFolderPath+data.portfolio.items[f].imagesHandle+'thumbnail.jpg', :class => 'portofolioThumbnail' %>
                     <% end %>
                     <p><%= data.portfolio.items[f].title %></p>
                 </div>

@@ -9,12 +9,12 @@
         "katrina",
         "idil",
         "joy",
-        "johnsonfamily",
         "kevin",
+        "johnsonfamily",
         "lauren",
-        "thetas",
-        "emily",
         "cassidy",
+        "emily",
+        "thetas",
         "connor"
     ],
 
@@ -24,15 +24,7 @@
             "url": "portfolio/annetomas",
             "imagesFolderPath": "portfolio/annetomas/",
             "imagesHandle": "annetomas",
-            "imagesCount": 4,
-            "summary": ""
-        },
-        "cooper": {
-            "title": "cooper",
-            "url": "portfolio/cooper",
-            "imagesFolderPath": "portfolio/cooper/",
-            "imagesHandle": "cooper",
-            "imagesCount": 9,
+            "imagesCount": 18,
             "summary": ""
         },
         "barbra": {
@@ -40,95 +32,7 @@
             "url": "portfolio/barbra",
             "imagesFolderPath": "portfolio/barbra/",
             "imagesHandle": "barbra",
-            "imagesCount": 11,
-            "summary": ""
-        },
-        "marianabaltazar": {
-            "title": "mariana + baltazar",
-            "url": "portfolio/marianabaltazar",
-            "imagesFolderPath": "portfolio/marianabaltazar/",
-            "imagesHandle": "marianabaltazar",
-            "imagesCount": 18,
-            "summary": ""
-        },
-        "mckenzie": {
-            "title": "mckenzie",
-            "url": "portfolio/mckenzie",
-            "imagesFolderPath": "portfolio/mckenzie/",
-            "imagesHandle": "mckenzie",
-            "imagesCount": 14,
-            "summary": ""
-        },
-        "kearstenjustin": {
-            "title": "kearsten + justin",
-            "url": "portfolio/kearstenjustin",
-            "imagesFolderPath": "portfolio/kearstenjustin/",
-            "imagesHandle": "kearstenjustin",
-            "imagesCount": 5,
-            "summary": ""
-        },
-        "katrina": {
-            "title": "katrina",
-            "url": "portfolio/katrina",
-            "imagesFolderPath": "portfolio/katrina/",
-            "imagesHandle": "katrina",
-            "imagesCount": 1,
-            "summary": ""
-        },
-        "idil": {
-            "title": "idil",
-            "url": "portfolio/idil",
-            "imagesFolderPath": "portfolio/idil/",
-            "imagesHandle": "idil",
-            "imagesCount": 3,
-            "summary": ""
-        },
-        "joy": {
-            "title": "joy",
-            "url": "portfolio/joy",
-            "imagesFolderPath": "portfolio/joy/",
-            "imagesHandle": "joy",
-            "imagesCount": 3,
-            "summary": ""
-        },
-        "johnsonfamily": {
-            "title": "johnson family",
-            "url": "portfolio/johnsonfamily",
-            "imagesFolderPath": "portfolio/johnsonfamily/",
-            "imagesHandle": "johnsonfamily",
-            "imagesCount": 3,
-            "summary": ""
-        },
-        "kevin": {
-            "title": "kevin",
-            "url": "portfolio/kevin",
-            "imagesFolderPath": "portfolio/kevin/",
-            "imagesHandle": "kevin",
-            "imagesCount": 3,
-            "summary": ""
-        },
-        "lauren": {
-            "title": "lauren",
-            "url": "portfolio/lauren",
-            "imagesFolderPath": "portfolio/lauren/",
-            "imagesHandle": "lauren",
-            "imagesCount": 5,
-            "summary": ""
-        },
-        "thetas": {
-            "title": "thetas",
-            "url": "portfolio/thetas",
-            "imagesFolderPath": "portfolio/thetas/",
-            "imagesHandle": "thetas",
-            "imagesCount": 6,
-            "summary": ""
-        },
-        "emily": {
-            "title": "emily",
-            "url": "portfolio/emily",
-            "imagesFolderPath": "portfolio/emily/",
-            "imagesHandle": "emily",
-            "imagesCount": 1,
+            "imagesCount": 36,
             "summary": ""
         },
         "cassidy": {
@@ -136,7 +40,7 @@
             "url": "portfolio/cassidy",
             "imagesFolderPath": "portfolio/cassidy/",
             "imagesHandle": "cassidy",
-            "imagesCount": 1,
+            "imagesCount": 13,
             "summary": ""
         },
         "connor": {
@@ -144,7 +48,103 @@
             "url": "portfolio/connor",
             "imagesFolderPath": "portfolio/connor/",
             "imagesHandle": "connor",
-            "imagesCount": 1,
+            "imagesCount": 17,
+            "summary": ""
+        },
+        "cooper": {
+            "title": "cooper",
+            "url": "portfolio/cooper",
+            "imagesFolderPath": "portfolio/cooper/",
+            "imagesHandle": "cooper",
+            "imagesCount": 21,
+            "summary": ""
+        },
+        "emily": {
+            "title": "emily",
+            "url": "portfolio/emily",
+            "imagesFolderPath": "portfolio/emily/",
+            "imagesHandle": "emily",
+            "imagesCount": 29,
+            "summary": ""
+        },
+        "idil": {
+            "title": "idil",
+            "url": "portfolio/idil",
+            "imagesFolderPath": "portfolio/idil/",
+            "imagesHandle": "idil",
+            "imagesCount": 11,
+            "summary": ""
+        },
+        "johnsonfamily": {
+            "title": "johnson family",
+            "url": "portfolio/johnsonfamily",
+            "imagesFolderPath": "portfolio/johnsonfamily/",
+            "imagesHandle": "johnsonfamily",
+            "imagesCount": 17,
+            "summary": ""
+        },
+        "joy": {
+            "title": "joy",
+            "url": "portfolio/joy",
+            "imagesFolderPath": "portfolio/joy/",
+            "imagesHandle": "joy",
+            "imagesCount": 28,
+            "summary": ""
+        },
+        "katrina": {
+            "title": "katrina",
+            "url": "portfolio/katrina",
+            "imagesFolderPath": "portfolio/katrina/",
+            "imagesHandle": "katrina",
+            "imagesCount": 31,
+            "summary": ""
+        },
+        "kearstenjustin": {
+            "title": "kearsten + justin",
+            "url": "portfolio/kearstenjustin",
+            "imagesFolderPath": "portfolio/kearstenjustin/",
+            "imagesHandle": "kearstenjustin",
+            "imagesCount": 38,
+            "summary": ""
+        },
+        "kevin": {
+            "title": "kevin",
+            "url": "portfolio/kevin",
+            "imagesFolderPath": "portfolio/kevin/",
+            "imagesHandle": "kevin",
+            "imagesCount": 18,
+            "summary": ""
+        },
+        "lauren": {
+            "title": "lauren",
+            "url": "portfolio/lauren",
+            "imagesFolderPath": "portfolio/lauren/",
+            "imagesHandle": "lauren",
+            "imagesCount": 25,
+            "summary": ""
+        },
+        "marianabaltazar": {
+            "title": "mariana + baltazar",
+            "url": "portfolio/marianabaltazar",
+            "imagesFolderPath": "portfolio/marianabaltazar/",
+            "imagesHandle": "marianabaltazar",
+            "imagesCount": 35,
+            "summary": ""
+        },
+        "mckenzie": {
+            "title": "mckenzie",
+            "url": "portfolio/mckenzie",
+            "imagesFolderPath": "portfolio/mckenzie/",
+            "imagesHandle": "mckenzie",
+            "imagesCount": 29,
+            "summary": ""
+        },
+        "thetas": {
+            "title": "thetas",
+            "url": "portfolio/thetas",
+            "imagesFolderPath": "portfolio/thetas/",
+            "imagesHandle": "thetas",
+            "imagesCount": 44,
             "summary": ""
         }
     }

@@ -85,11 +85,7 @@ h5, .h05, h6, .h06 {
 h1, .h01 {
 	line-height: 2rem;
 }
-@media only screen and (max-width:600px) {
-	h1, .h01 {
-		letter-spacing: -.07rem;
-	}
-}
+
 p img {
 	margin: 0;
 }
@@ -309,8 +305,8 @@ img.pull-left {
 	left: 0;
 	right: 0;
 	bottom: 0;
-    background-color: rgba(0,0,0,0.4);
-    background-image: url("../images/homeslider-bckgnd.jpg");
+    background-color: transparent;
+    background-image: none;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1056,8 +1052,9 @@ header .row {
     }
 }
 
-.portfolio-post {
-    padding-bottom: 12rem;
+.portfolioPost {
+    text-align: center;
+    padding-bottom: 16rem;
 
     .header {
         padding: 3rem 0;
@@ -1078,7 +1075,7 @@ header .row {
 
     .portfolioImage {
         max-height: 80vh;
-        padding-bottom: 2rem;
+        padding-bottom: 0;
     }
 }
 
@@ -1089,7 +1086,7 @@ header .row {
  * ------------------------------------------------------------------- */
 #info {
 	background: #FFFFFF;
-	background-image: url("../images/info-bckgnd.jpg");
+	background-image: none;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1098,7 +1095,12 @@ header .row {
 	background-size: cover;
 	padding: 10.2rem 0 9rem;
 	position: relative;
-	color: rgba(17, 17, 17, 0.7);
+}
+
+@media only screen and (min-width: 1024px) {
+    #info {
+        background-image: url("../images/info-bckgnd.jpg");
+    }
 }
 #info .info-overlay {
 	position: absolute;
@@ -1117,7 +1119,7 @@ header .row {
         padding-top: 8rem;
 
         .tabs-wrap .tab-entry-intro {
-            max-width: 1200px;
+            max-width: 1000px;
         }
     }
 }
@@ -1159,9 +1161,9 @@ header .row {
 }
 #info .tabs-wrap ul.tabs li i {
 	margin-right: 7px;
-	font-size: 1.4rem;
-	position: relative;
-	top: .3rem;
+    font-size: 1.6rem;
+    position: relative;
+    top: .2rem;
 }
 #info .tabs-wrap .tab-container {
 	clear: both;
@@ -1181,7 +1183,8 @@ header .row {
 	margin-bottom: 4.2rem;
 }
 #info .tabs-wrap .tab-entry-intro h1 {
-	line-height: 1.267;
+	line-height: 2.8rem;
+    margin-bottom: 3rem;
 }
 #info .tabs-wrap .tab-entry-intro p.lead {
 	color: rgba(17, 17, 17, 0.5);
@@ -1371,13 +1374,12 @@ header .row {
 #tab-contact #message-warning,
 #tab-contact #message-success {
 	display: none;
-	background: #dedede;
-	border-radius: 3px;
-	padding: 3rem;
-	margin-bottom: 3.6rem;
-	width: 100%;
-	text-align: left;
-	box-shadow: 0 1px 3px rgba(17, 17, 17, 0.1);
+    background: white;
+    border-radius: 0;
+    padding: 3rem;
+    margin-bottom: 3.6rem;
+    width: 100%;
+    text-align: center;
 }
 
 #tab-contact #message-warning {

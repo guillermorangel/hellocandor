@@ -29,140 +29,48 @@
   	$(".fluid-video-wrapper").fitVids();
 
 
+    /* --------------------------------------------------- */
+	/*  load slider images list
+	------------------------------------------------------ */
+    var slides = [
+        "katrinafeature.jpg",
+        "annetomas.jpg",
+        "cooperfeature.jpg",
+        "marianabaltazarfeature.jpg",
+        "barbra1.jpg",
+        "kearstenjustin1.jpg",
+        "johnsonfamilyfeature.jpg",
+        "joyfeature.jpg",
+        "mckenziefeature.jpg",
+        "barbra2.jpg",
+        "laurenfeature.jpg",
+        "idilfeature.jpg",
+        "kevin1.jpg",
+        "cassidyfeature.jpg",
+        "connorfeature.jpg",
+    ];
+
+    var slidesFullPath = [];
+    var buildAndDeploy = true;
+    for(var i = 0; i < slides.length; i++) {
+        var path = '/images/slides/';
+        var domain = 'http://hellocandor.com'
+        var fileName = slides[i];
+        if (buildAndDeploy) {
+            var path = domain+path;
+        }
+        slidesFullPath.push({src: path+fileName});
+    }
+
+    
 	/* --------------------------------------------------- */
 	/*  Vegas Slideshow
 	------------------------------------------------------ */
 	$(".home-slides").vegas({
 		transition: 'fade',
-		transitionDuration: 1000,
+		transitionDuration: 850,
 		delay: 5000,
-    	slides: [
-            // { src: "//hellocandor.com/build/images/slides/marianabaltazar.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra1.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra2.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra3.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra4.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra5.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra6.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra7.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra8.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra9.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra10.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/barbra11.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/cassidy.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/connor.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/cooper.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/emily.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/joy0.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/joy1.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/joy2.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/katrina.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/kevin.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/lauren1.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/lauren2.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/lauren3.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/lauren4.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/lauren5.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/mckenzie1.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/reginna.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/thetas1.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/thetas2.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/thetas3.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/thetas4.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/thetas5.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/thetas6.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/annetomas1.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/annetomas2.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/annetomas3.jpg" },
-            // { src: "//hellocandor.com/build/images/slides/annetomas4.jpg" }
-            { src: "/images/slides/katrina.jpg" },
-            { src: "/images/slides/barbra1.jpg" },
-            { src: "/images/slides/barbra2.jpg" },
-            { src: "/images/slides/barbra3.jpg" },
-            { src: "/images/slides/barbra4.jpg" },
-            { src: "/images/slides/barbra5.jpg" },
-            { src: "/images/slides/barbra6.jpg" },
-            { src: "/images/slides/barbra7.jpg" },
-            { src: "/images/slides/barbra8.jpg" },
-            { src: "/images/slides/barbra9.jpg" },
-            { src: "/images/slides/barbra10.jpg" },
-            { src: "/images/slides/barbra11.jpg" },
-            { src: "/images/slides/cassidy.jpg" },
-            { src: "/images/slides/connor.jpg" },
-            { src: "/images/slides/emily.jpg" },
-            { src: "/images/slides/joy0.jpg" },
-            { src: "/images/slides/joy1.jpg" },
-            { src: "/images/slides/joy2.jpg" },
-            { src: "/images/slides/lauren1.jpg" },
-            { src: "/images/slides/lauren2.jpg" },
-            { src: "/images/slides/lauren3.jpg" },
-            { src: "/images/slides/lauren4.jpg" },
-            { src: "/images/slides/lauren5.jpg" },
-            { src: "/images/slides/reginna.jpg" },
-            { src: "/images/slides/thetas1.jpg" },
-            { src: "/images/slides/thetas2.jpg" },
-            { src: "/images/slides/thetas3.jpg" },
-            { src: "/images/slides/thetas4.jpg" },
-            { src: "/images/slides/thetas5.jpg" },
-            { src: "/images/slides/thetas6.jpg" },
-            { src: "/images/slides/annetomas1.jpg" },
-            { src: "/images/slides/annetomas2.jpg" },
-            { src: "/images/slides/annetomas3.jpg" },
-            { src: "/images/slides/annetomas4.jpg" },
-            { src: "/images/slides/marianabaltazar1.jpg" },
-            { src: "/images/slides/marianabaltazar2.jpg" },
-            { src: "/images/slides/marianabaltazar3.jpg" },
-            { src: "/images/slides/marianabaltazar4.jpg" },
-            { src: "/images/slides/marianabaltazar5.jpg" },
-            { src: "/images/slides/marianabaltazar6.jpg" },
-            { src: "/images/slides/marianabaltazar7.jpg" },
-            { src: "/images/slides/marianabaltazar8.jpg" },
-            { src: "/images/slides/marianabaltazar9.jpg" },
-            { src: "/images/slides/marianabaltazar10.jpg" },
-            { src: "/images/slides/marianabaltazar11.jpg" },
-            { src: "/images/slides/marianabaltazar12.jpg" },
-            { src: "/images/slides/marianabaltazar13.jpg" },
-            { src: "/images/slides/marianabaltazar14.jpg" },
-            { src: "/images/slides/marianabaltazar15.jpg" },
-            { src: "/images/slides/marianabaltazar16.jpg" },
-            { src: "/images/slides/marianabaltazar17.jpg" },
-            { src: "/images/slides/marianabaltazar18.jpg" },
-            { src: "/images/slides/marianabaltazar18.jpg" },
-            { src: "/images/slides/cooper1.jpg" },
-            { src: "/images/slides/cooper2.jpg" },
-            { src: "/images/slides/cooper3.jpg" },
-            { src: "/images/slides/cooper4.jpg" },
-            { src: "/images/slides/cooper5.jpg" },
-            { src: "/images/slides/cooper6.jpg" },
-            { src: "/images/slides/cooper7.jpg" },
-            { src: "/images/slides/cooper8.jpg" },
-            { src: "/images/slides/cooper9.jpg" },
-            { src: "/images/slides/idil1.jpg" },
-            { src: "/images/slides/idil2.jpg" },
-            { src: "/images/slides/idil3.jpg" },
-            { src: "/images/slides/johnsonfamily1.jpg" },
-            { src: "/images/slides/johnsonfamily2.jpg" },
-            { src: "/images/slides/johnsonfamily3.jpg" },
-            { src: "/images/slides/justinkearsten1.jpg" },
-            { src: "/images/slides/justinkearsten2.jpg" },
-            { src: "/images/slides/justinkearsten3.jpg" },
-            { src: "/images/slides/justinkearsten4.jpg" },
-            { src: "/images/slides/justinkearsten5.jpg" },
-            { src: "/images/slides/mckenzie1.jpg" },
-            { src: "/images/slides/mckenzie2.jpg" },
-            { src: "/images/slides/mckenzie3.jpg" },
-            { src: "/images/slides/mckenzie4.jpg" },
-            { src: "/images/slides/mckenzie5.jpg" },
-            { src: "/images/slides/mckenzie6.jpg" },
-            { src: "/images/slides/mckenzie7.jpg" },
-            { src: "/images/slides/mckenzie8.jpg" },
-            { src: "/images/slides/mckenzie9.jpg" },
-            { src: "/images/slides/mckenzie10.jpg" },
-            { src: "/images/slides/mckenzie11.jpg" },
-            { src: "/images/slides/mckenzie12.jpg" },
-            { src: "/images/slides/mckenzie13.jpg" },
-            { src: "/images/slides/mckenzie14.jpg" }
-    	]
+    	slides: slidesFullPath
 	});
 
     $('a#sliderNext').on('click', function () {
@@ -214,27 +122,6 @@
 	$('input, textarea, select').placeholder()
 
 
-  	/* --------------------------------------------------- */
-	/*  LazyLoad
-	------------------------------------------------------ */
-    $('.lazy').Lazy({
-        effect: "fadeIn",
-        effectTime: 2000,
-        threshold: 0,
-        onError: function(element) {
-            console.log('error loading ' + element.data('src'));
-        },
-        afterLoad: function(element) {
-            console.log('success loading ' + element.data('src'));
-        },
-    });
-
-    $(function() {
-        $('.lazy').Lazy();
-        console.log('lazy');
-    });
-
-
 	/*---------------------------------------------------- */
 	/*	contact form
 	------------------------------------------------------ */
@@ -250,7 +137,7 @@
 			$.ajax({
 
 		      type: "POST",
-		      url: "http://hellocandor.com/inc/sendEmail.php",
+		      url: "http://hellocandor.com/shared/sendEmail.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() {
 

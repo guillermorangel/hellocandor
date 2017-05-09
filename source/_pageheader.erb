@@ -15,19 +15,13 @@
                     '/portfolio',
                     :class => nav_active('/portfolio/')
                 %>&nbsp;&nbsp;
-
                 <%=
-                    link_to 'about &amp; contact',
+                    link_to 'about & contact',
                     '/about',
                     :class => nav_active('/about/')
-                %>&nbsp;&nbsp;
-                <%=
-                    link_to 'contact',
-                    '/contact',
-                    :class => nav_active('/contact/')
                 %>
             <% else %>
-                <%= link_to 'portfolio', '#portfolioGallery', :class => 'smoothscroll' %>&nbsp;|
+                <%= link_to 'portfolio', '#portfolioGallery', :class => 'smoothscroll' %>&nbsp;&nbsp;
                 <%= link_to 'about &amp; contact', '#info', :class => 'smoothscroll' %>
             <% end %>
         </p>
