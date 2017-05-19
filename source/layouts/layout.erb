@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
-    <meta name="description" content="i'm a photographer living in the midwest but will travel wherever to take photos. in short, i'm a laid-back kinda guy that loves to take photos. i focus on capturing what moment feels like. i don't care much for 'perfect' poses; i want to capture real emotions and genuine interactions. let's create something true, something real."/>
+    <meta name="description" content=<%= current_page.data.description || '"im a photographer living in the midwest but will travel wherever to take photos. i dont care much for perfect poses and instead focus on capturing what the moment feels like; i want to capture real emotions and genuine interactions. lets create something true, something real."'%>/>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "modernizr" %>
   </head>

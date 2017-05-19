@@ -7,7 +7,11 @@
                     <% link_to data.portfolio.items[f].url, :class => 'thumbLink' do %>
                         <%= image_tag data.portfolio.items[f].imagesFolderPath+data.portfolio.items[f].imagesHandle+'thumbnail.jpg', :class => 'portofolioThumbnail' %>
                     <% end %>
-                    <p><%= data.portfolio.items[f].title %></p>
+                    <p>
+                        <% link_to data.portfolio.items[f].url do %>
+                            <%= data.portfolio.items[f].title %>
+                        <% end %>
+                    </p>
                 </div>
             <% end %>
         </div>
