@@ -6,23 +6,19 @@
 
         <p id="navigation">
             <% if current_page.url != '/' %>
-                <%= link_to 'home', '/' %>&nbsp;&nbsp;
+                <%= link_to 'home', '/', :class => nav_active('/') %>&nbsp;&nbsp;
             <% end %>
 
             <% if current_page.url != '/' %>
-                <%=
-                    link_to 'portfolio',
-                    '/portfolio',
-                    :class => nav_active('/portfolio/')
-                %>&nbsp;&nbsp;
-                <%=
-                    link_to 'about & contact',
-                    '/about',
-                    :class => nav_active('/about/')
-                %>
+                <%= link_to 'portfolio','/portfolio', :class => nav_active('/portfolio/') %>&nbsp;&nbsp;
+                <%= link_to 'about', '/about', :class => nav_active('/about/') %>&nbsp;&nbsp;
+                <%= link_to 'contact', '/contact', :class => nav_active('/contact/') %>
+
             <% else %>
-                <%= link_to 'portfolio', '#portfolioGallery', :class => 'smoothscroll' %>&nbsp;&nbsp;
-                <%= link_to 'about &amp; contact', '#info', :class => 'smoothscroll' %>
+            <%= link_to 'home', '/', :class => nav_active('/') %>&nbsp;&nbsp;
+            <%= link_to 'portfolio','/portfolio', :class => nav_active('/portfolio/') %>&nbsp;&nbsp;
+            <%= link_to 'about', '/about', :class => nav_active('/about/') %>&nbsp;&nbsp;
+            <%= link_to 'contact', '/contact', :class => nav_active('/contact/') %>
             <% end %>
         </p>
     </div>
