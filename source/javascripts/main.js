@@ -33,21 +33,29 @@
 	/*  load slider images list
 	------------------------------------------------------ */
     var slides = [
-        "katrinafeature.jpg",
-        "annetomas.jpg",
-        "cooperfeature.jpg",
+        "katrinafeature2.jpg",
+        "abbynaotofeature2.jpg",
+        "hollemanfeature3.jpg",
+        "fononfeature2.jpg",
+        "alexandriapaulfeature2.jpg",
+        "madyfeature.jpg",
         "marianabaltazarfeature.jpg",
+        "cooperfeature.jpg",
         "barbra1.jpg",
-        "kearstenjustin1.jpg",
-        "johnsonfamilyfeature.jpg",
+        "hollemanfeature5.jpg",
+        "johnlukerainfeature.jpg",
+        "norahfeature2.jpg",
+        "annetomas.jpg",
         "joyfeature.jpg",
+        "johnsonfamilyfeature.jpg",
         "mckenziefeature.jpg",
         "barbra2.jpg",
         "laurenfeature.jpg",
+        "kearstenjustin1.jpg",
         "idilfeature.jpg",
         "kevin1.jpg",
         "cassidyfeature.jpg",
-        "connorfeature.jpg",
+        "connorfeature.jpg"
     ];
 
     var slidesFullPath = [];
@@ -62,7 +70,7 @@
         slidesFullPath.push({src: path+fileName});
     }
 
-    
+
 	/* --------------------------------------------------- */
 	/*  Vegas Slideshow
 	------------------------------------------------------ */

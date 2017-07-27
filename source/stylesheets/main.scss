@@ -1076,6 +1076,8 @@ header .row {
 }
 
 
+
+
 #portfolioGallery {
     padding: 4rem 0 12rem;
     text-align: center;
@@ -1178,6 +1180,32 @@ header .row {
         }
     }
 }
+
+.aboutProfilePic {
+    max-width: 200px;
+    border-radius: 100px;
+    padding: 0px;
+    border: 2px solid goldenrod;
+    margin: 4rem 0 1rem 0;
+
+    &:hover {
+        padding: 6px;
+        transition: all 0.2s ease-in-out;
+        border-color: darkgoldenrod;
+    }
+}
+
+.messageMe {
+    margin-bottom: 7rem;
+
+    a {
+        color: goldenrod;
+
+        &:hover {
+            color: darkgoldenrod;
+        }
+    }
+}
 /* tabs
  *-------------------------------------------- */
 #info .tabs-wrap {
@@ -1248,6 +1276,7 @@ header .row {
 	line-height: 2.8rem;
     margin-bottom: 3rem;
 }
+
 #info .tabs-wrap .tab-entry-intro p.lead {
 	color: rgba(17, 17, 17, 0.5);
 }

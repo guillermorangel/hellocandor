@@ -10,10 +10,12 @@
         </div>
 
         <% 1.upto(data.portfolio.items[post].imagesCount) do |i| %>
-            <%
-                imagePath = data.portfolio.items[post].imagesFolderPath+data.portfolio.items[post].imagesHandle+"#{i}"+'.jpg'
-            %>
-            <%= image_tag imagePath, :class => 'portfolioImage' %>
+            <% imagePath = data.portfolio.items[post].imagesFolderPath+data.portfolio.items[post].imagesHandle+"#{i}"+'.jpg' %>
+            <% imagePathSmall = "//hellocandor.com/images/"+data.portfolio.items[post].imagesFolderPath+'small/'+data.portfolio.items[post].imagesHandle+"#{i}"+'.jpg' %>
+            <picture class="portfolioImage">
+              <source media="(max-width: 1200px)" srcset="<%= imagePathSmall %>">
+              <%= image_tag imagePath, :class => 'portfolioImage' %>
+            </picture>
         <% end %>
     </div>
     <div class="row">
