@@ -1,21 +1,29 @@
 {
     "gallery": [
-        "annetomas",
-        "cooper",
+        "abbynaoto",
+        "fonon",
         "barbra",
-        "marianabaltazar",
-        "mckenzie",
-        "kearstenjustin",
+        "alexandriapaul",
+        "cooper",
+        "mady",
+        "holleman",
         "katrina",
-        "idil",
+        "johnlukerain",
         "joy",
-        "kevin",
-        "johnsonfamily",
-        "lauren",
+        "marianabaltazar",
         "cassidy",
+        "norah",
+        "lauren",
+        "annetomas",
+        "kearstenjustin",
+        "connor",
+        "mckenzie",
+        "idil",
+        "kevin",
         "emily",
         "thetas",
-        "connor"
+        "johnlukecity",
+        "johnsonfamily"
     ],
 
     "items": {
@@ -145,6 +153,78 @@
             "imagesFolderPath": "portfolio/thetas/",
             "imagesHandle": "thetas",
             "imagesCount": 44,
+            "summary": ""
+        },
+        "alexandriapaul": {
+            "title": "alexandria + paul",
+            "url": "portfolio/alexandriapaul",
+            "imagesFolderPath": "portfolio/alexandriapaul/",
+            "imagesHandle": "alexandriapaul",
+            "imagesCount": 55,
+            "summary": ""
+        },
+        "mady": {
+            "title": "mady",
+            "url": "portfolio/mady",
+            "imagesFolderPath": "portfolio/mady/",
+            "imagesHandle": "mady",
+            "imagesCount": 57,
+            "summary": ""
+        },
+        "fonon": {
+            "title": "fonon",
+            "url": "portfolio/fonon",
+            "imagesFolderPath": "portfolio/fonon/",
+            "imagesHandle": "fonon",
+            "imagesCount": 52,
+            "summary": ""
+        },
+        "holleman": {
+            "title": "housemates",
+            "url": "portfolio/holleman",
+            "imagesFolderPath": "portfolio/holleman/",
+            "imagesHandle": "holleman",
+            "imagesCount": 161,
+            "summary": ""
+        },
+        "hoperas": {
+            "title": "residential assistants",
+            "url": "portfolio/hoperas",
+            "imagesFolderPath": "portfolio/hoperas/",
+            "imagesHandle": "hoperas",
+            "imagesCount": 23,
+            "summary": ""
+        },
+        "abbynaoto": {
+            "title": "abby + naoto",
+            "url": "portfolio/abbynaoto",
+            "imagesFolderPath": "portfolio/abbynaoto/",
+            "imagesHandle": "abbynaoto",
+            "imagesCount": 53,
+            "summary": ""
+        },
+        "norah": {
+            "title": "norah",
+            "url": "portfolio/norah",
+            "imagesFolderPath": "portfolio/norah/",
+            "imagesHandle": "norah",
+            "imagesCount": 40,
+            "summary": ""
+        },
+        "johnlukecity": {
+            "title": "john luke / city",
+            "url": "portfolio/johnlukecity",
+            "imagesFolderPath": "portfolio/johnlukecity/",
+            "imagesHandle": "johnlukecity",
+            "imagesCount": 33,
+            "summary": ""
+        },
+        "johnlukerain": {
+            "title": "john luke / outdoors",
+            "url": "portfolio/johnlukerain",
+            "imagesFolderPath": "portfolio/johnlukerain/",
+            "imagesHandle": "johnlukerain",
+            "imagesCount": 48,
             "summary": ""
         }
     }
