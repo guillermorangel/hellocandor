@@ -1174,6 +1174,7 @@ header .row {
 
     #info {
         padding-top: 0;
+        min-height: 80%;
 
         .tabs-wrap .tab-entry-intro h1 {
             margin-bottom: 0;
@@ -1187,11 +1188,10 @@ header .row {
     padding: 0px;
     border: 2px solid goldenrod;
     margin: 4rem 0 1rem 0;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         padding: 6px;
-        transition: all 0.2s ease-in-out;
-        border-color: darkgoldenrod;
     }
 }
 
