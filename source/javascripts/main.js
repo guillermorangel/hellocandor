@@ -12,83 +12,103 @@
 	/* --------------------------------------------------- */
 	/* Preloader
 	------------------------------------------------------ */
+    var useSmallSlides = false;
+    var windowWidth;
+    var getWidth = function () {
+        return $(window).width();
+    }
+    var setSlidesPath = function() {
+        var width = getWidth();
+        if (width < 1201) {
+            useSmallSlides = true;
+        }
+    }
+
+    /* --------------------------------------------------- */
+	/*  set slider images list
+	------------------------------------------------------ */
+    var loadHomeSlides = function() {
+        var slides = [
+            "katrinafeature2",
+            "abbynaotofeature2",
+            "hollemanfeature3",
+            "fononfeature2",
+            "alexandriapaulfeature2",
+            "madyfeature",
+            "marianabaltazarfeature",
+            "cooperfeature",
+            "barbra1",
+            "hollemanfeature5",
+            "johnlukerainfeature",
+            "norahfeature2",
+            "annetomas",
+            "joyfeature",
+            "johnsonfamilyfeature",
+            "mckenziefeature",
+            "barbra2",
+            "laurenfeature",
+            "kearstenjustin1",
+            "idilfeature",
+            "kevin1",
+            "cassidyfeature",
+            "connorfeature"
+        ];
+
+        var slidesFullPath = [];
+        var buildAndDeploy = true;
+        for(var i = 0; i < slides.length; i++) {
+            var path = '/images/slides/';
+            if (useSmallSlides) {
+                path = path + 'small/';
+            }
+            var domain = 'http://hellocandor.com'
+            var fileName = slides[i] + '.jpg';
+            if (buildAndDeploy) {
+                var path = domain+path;
+            }
+            slidesFullPath.push({src: path+fileName});
+        }
+
+        /* --------------------------------------------------- */
+        /*  Vegas Slideshow
+        ------------------------------------------------------ */
+        $(".home-slides").vegas({
+            transition: 'fade',
+            transitionDuration: 850,
+            delay: 5000,
+            slides: slidesFullPath
+        });
+
+        $('a#sliderNext').on('click', function () {
+            $(".home-slides").vegas('next');
+        });
+
+        $('a#sliderPrev').on('click', function () {
+            $(".home-slides").vegas('previous');
+        });
+
+    }
+
    $(window).load(function() {
       // will first fade out the loading animation
     	$("#loader").fadeOut("slow", function(){
 
         // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+        $("#preloader").delay(200).fadeOut("slow");
 
+        setSlidesPath();
+        loadHomeSlides();
       });
-  	})
+    });
 
+    $(window).resize(function() {
+        setSlidesPath();
+    });
 
   	/*---------------------------------------------------- */
 	/* FitVids
 	------------------------------------------------------ */
   	$(".fluid-video-wrapper").fitVids();
-
-
-    /* --------------------------------------------------- */
-	/*  load slider images list
-	------------------------------------------------------ */
-    var slides = [
-        "katrinafeature2.jpg",
-        "abbynaotofeature2.jpg",
-        "hollemanfeature3.jpg",
-        "fononfeature2.jpg",
-        "alexandriapaulfeature2.jpg",
-        "madyfeature.jpg",
-        "marianabaltazarfeature.jpg",
-        "cooperfeature.jpg",
-        "barbra1.jpg",
-        "hollemanfeature5.jpg",
-        "johnlukerainfeature.jpg",
-        "norahfeature2.jpg",
-        "annetomas.jpg",
-        "joyfeature.jpg",
-        "johnsonfamilyfeature.jpg",
-        "mckenziefeature.jpg",
-        "barbra2.jpg",
-        "laurenfeature.jpg",
-        "kearstenjustin1.jpg",
-        "idilfeature.jpg",
-        "kevin1.jpg",
-        "cassidyfeature.jpg",
-        "connorfeature.jpg"
-    ];
-
-    var slidesFullPath = [];
-    var buildAndDeploy = true;
-    for(var i = 0; i < slides.length; i++) {
-        var path = '/images/slides/';
-        var domain = 'http://hellocandor.com'
-        var fileName = slides[i];
-        if (buildAndDeploy) {
-            var path = domain+path;
-        }
-        slidesFullPath.push({src: path+fileName});
-    }
-
-
-	/* --------------------------------------------------- */
-	/*  Vegas Slideshow
-	------------------------------------------------------ */
-	$(".home-slides").vegas({
-		transition: 'fade',
-		transitionDuration: 850,
-		delay: 5000,
-    	slides: slidesFullPath
-	});
-
-    $('a#sliderNext').on('click', function () {
-        $(".home-slides").vegas('next');
-    });
-
-    $('a#sliderPrev').on('click', function () {
-        $(".home-slides").vegas('previous');
-    });
-
 
 	/*-----------------------------------------------------*/
 	/* tabs
