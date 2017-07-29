@@ -2,6 +2,7 @@
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :directory_indexes
+activate :minify_html
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
