@@ -28,7 +28,6 @@
  *
  * ------------------------------------------------------------------- */
 @import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,500');
 
 
@@ -1217,25 +1216,34 @@ header .row {
 	display: inline-block;
 	margin: 0 0 6rem 0;
 	padding: 0;
-}
-#info .tabs-wrap ul.tabs li {
-	display: inline-block;
-	text-transform: uppercase;
-	background: transparent;
-	font-size: 1.4rem;
-	letter-spacing: .2rem;
-	padding: .9rem 3rem;
-	margin: 0 1rem 0 0;
-	border: 2px solid rgba(0,0,0,0.35);
-	cursor: pointer;
-    color: rgba(0,0,0,0.5);
 
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    li {
+    	display: inline-block;
+    	text-transform: uppercase;
+    	background: transparent;
+    	font-size: 1.4rem;
+    	letter-spacing: .2rem;
+    	padding: .9rem 3rem;
+    	margin: 0 1rem 0 0;
+    	border: 2px solid rgba(0,0,0,0.35);
+    	cursor: pointer;
+        color: rgba(0,0,0,0.5);
+
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+        i {
+        	margin-right: 7px;
+            font-size: 1.6rem;
+            position: relative;
+            top: 0.1rem;
+        }
+    }
 }
+#info .tabs-wrap ul.tabs
 #info .tabs-wrap ul.tabs li:last-child {
 	margin-right: 0;
 }
@@ -1249,12 +1257,7 @@ header .row {
 	color: goldenrod;
 	border-color: goldenrod;
 }
-#info .tabs-wrap ul.tabs li i {
-	margin-right: 7px;
-    font-size: 1.6rem;
-    position: relative;
-    top: .2rem;
-}
+#info .tabs-wrap ul.tabs li
 #info .tabs-wrap .tab-container {
 	clear: both;
 	width: 100%;
