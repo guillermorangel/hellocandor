@@ -379,6 +379,7 @@ img.pull-left {
 fieldset {
 	border: none;
 }
+input.typeText,
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -404,21 +405,14 @@ select {
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+
+    &:focus {
+        color: #000000;
+        border-color: goldenrod;
+    }
 }
 textarea {
 	min-height: 25rem;
-}
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-	color: #000000;
-	border-color: goldenrod;
 }
 label, legend {
     font-size: 1rem;
@@ -1303,23 +1297,26 @@ header .row {
 	margin-top: 6rem;
 	margin-right: auto;
 	margin-left: auto;
-}
-#info .row .form-wrap .form-field {
-	margin-bottom: 3.6rem;
-}
-#info .row .form-wrap input[type="email"],
-#info .row .form-wrap input[type="number"],
-#info .row .form-wrap input[type="search"],
-#info .row .form-wrap input[type="text"],
-#info .row .form-wrap input[type="tel"],
-#info .row .form-wrap input[type="url"],
-#info .row .form-wrap input[type="password"],
-#info .row .form-wrap textarea,
-#info .row .form-wrap select,
-#info .row .form-wrap button,
-#info .row .form-wrap .button {
-	width: 100%;
-	margin-bottom: 0;
+
+    .form-field {
+    	margin-bottom: 3.6rem;
+    }
+
+    input.typeText,
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    textarea,
+    select,
+    button,
+    .button {
+    	width: 100%;
+    	margin-bottom: 0;
+    }
 }
 
 #infoFooter {
