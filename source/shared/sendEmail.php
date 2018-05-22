@@ -22,7 +22,7 @@ if($_POST) {
   }
    // Check Name
   if (strlen($phone) < 10) {
-		$error['name'] = "Please enter your phone number including aread code.";
+		$error['phone'] = "Please enter your phone number including aread code.";
   }
 	// Check Message
 	if (strlen($contact_message) < 15) {
