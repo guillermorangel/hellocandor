@@ -8,6 +8,7 @@ if($_POST) {
 
    $name = trim(stripslashes($_POST['contactName']));
    $email = trim(stripslashes($_POST['contactEmail']));
+   $phone = trim(stripslashes($_POST['contactPhone']));
    $subject = trim(stripslashes($_POST['contactSubject']));
    $contact_message = trim(stripslashes($_POST['contactMessage']));
 
@@ -18,7 +19,11 @@ if($_POST) {
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
 		$error['email'] = "Please enter a valid email address.";
-	}
+  }
+   // Check Name
+  if (strlen($phone) < 10) {
+		$error['name'] = "Please enter your phone number including aread code.";
+  }
 	// Check Message
 	if (strlen($contact_message) < 15) {
 		$error['message'] = "Please enter your message. It should have at least 15 characters.";
@@ -29,7 +34,8 @@ if($_POST) {
 
    // Set Message
    $message .= "Email from: " . $name . "<br />";
-	$message .= "Email address: " . $email . "<br />";
+   $message .= "Email address: " . $email . "<br />";
+   $message .= "Phone: " . $phone . "<br />";
    $message .= "Message: <br />";
    $message .= $contact_message;
    $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
