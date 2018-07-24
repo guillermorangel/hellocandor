@@ -1,5 +1,9 @@
 ﻿<?php
 
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST');
+header("Access-Control-Allow-Headers: X-Requested-With");
+
 // Replace this with your own email address
 $siteOwnersEmail = 'holacandor@gmail.com';
 
