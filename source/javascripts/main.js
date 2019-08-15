@@ -61,7 +61,7 @@
             if (useSmallSlides) {
                 path = path + 'small/';
             }
-            var domain = 'http://hellocandor.com'
+            var domain = 'https://hellocandor.netlify.com'
             var fileName = slides[i] + '.jpg';
             if (buildAndDeploy) {
                 var path = domain+path;

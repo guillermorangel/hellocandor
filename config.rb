@@ -51,7 +51,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 
-  activate :asset_host, :host => '//hellocandor.com/'
+  activate :asset_host, :host => '//hellocandor.netlify.com/'
 end
 
 helpers do
